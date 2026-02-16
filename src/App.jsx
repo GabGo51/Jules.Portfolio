@@ -51,11 +51,11 @@ function App() {
         </div>
         <section>
           <Layer>
-            <Image gridColumn="1 /6 " name="errance_01" />
+            <Image gridColumn="1 /6 " name="errance_01" margin=""/>
             <Image gridColumn="7 /13 " name="nuitblue_02" margin="50%" />
           </Layer>
           <Layer>
-            <Video gridColumn="2 /11 " name="nuitblue_03" margin="" />
+            <Video gridColumn="2 /11 " name="nuitblue_03"  />
             <Image gridColumn="3 /7 " name="nuitblue_01" margin="10%" />
           </Layer>
           <Layer>
@@ -141,6 +141,9 @@ function App() {
           </Layer>
           <Layer>
             <Image gridColumn="6 /12 " name="mayman_01" margin="0%" />
+          </Layer>
+          <Layer>
+            <Video gridColumn="1 /12 " name="bioitalia_01" margin="0%" />
           </Layer>
         </section>
 
