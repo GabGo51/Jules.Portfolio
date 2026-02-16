@@ -38,14 +38,14 @@ function App() {
             href="mailto:jjjules.n@gmail.com"
             className="bold cursor-pointer hover:underline"
           >
-            jjjules.n@gmail.com gouene
+            jjjules.n@gmail.com
           </a>
-          <div>
-            <button className="bold" onClick={() => setLang("fr")}>
-              FR
+          <div style={{marginRight:"5%", marginTop:"2%"}}>
+            <button className="scripttype"  onClick={() => setLang("fr")}>
+              Fr / 
             </button>
-            <button className="bold" onClick={() => setLang("en")}>
-              EN
+            <button className="scripttype" onClick={() => setLang("en")}>
+              En
             </button>
           </div>
         </div>
@@ -149,7 +149,7 @@ function App() {
 
         {/* Return to Top Button */}
         <button
-          className="bold return-to-top"
+          className="scripttype  return-to-top"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Return to top of page"
           style={{
@@ -158,9 +158,10 @@ function App() {
             border: "none",
             padding: 0,
             marginTop: "10rem",
+            marginLeft: "5%",
           }}
         >
-          {lang === "fr" ? "RETOUR" : "TOP"}
+          {lang === "fr" ? "Retour" : "Top"}
         </button>
       </main>
     </>
