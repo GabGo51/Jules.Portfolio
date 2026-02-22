@@ -20,7 +20,11 @@ const Image = ({ name, gridColumn, margin }) => {
   const contextKey = lang === "fr" ? "contextFr" : "contextEn";
 
   return (
-    <div style={{ gridColumn: gridColumn }}>
+    <div style={{ gridColumn: gridColumn }}
+          onMouseLeave={() => {
+          normal();
+          setIsHovered(false);
+        }}>
       <div
         style={{
           marginTop: margin,
@@ -34,10 +38,6 @@ const Image = ({ name, gridColumn, margin }) => {
         onMouseEnter={() => {
           hover();
           setIsHovered(true);
-        }}
-        onMouseLeave={() => {
-          normal();
-          setIsHovered(false);
         }}
       >
         <img
